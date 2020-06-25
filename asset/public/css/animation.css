@@ -1,0 +1,28 @@
+.animation-content{
+	animation: a1 1.5s forwards;
+	
+}
+@-webkit-keyframes a1{
+	0%{
+		opacity: 0;
+		transform:translateX(-500px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.animation-thumb-about{
+	animation: a2 1.5s forwards;
+	
+}
+@-webkit-keyframes a2{
+	0%{
+		opacity: 0;
+		transform:translateX(500px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

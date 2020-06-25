@@ -1,0 +1,675 @@
+* img{
+	width: 100%;
+	height: auto;
+}
+
+.wp-inner{
+	width: 1229px;
+	margin: 0 auto;
+	padding: 0px 30px;
+}
+#header{
+	position: relative;
+}
+#header #top-header{
+	background-color: #bf9958;
+}
+#top-header {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #fff;
+}
+#top-header .wp-inner{
+	display: flex;
+	justify-content: space-between;
+}
+#top-header .list-social{
+	display: flex;
+}
+#top-header .info-detail,.social{
+	padding: 9px 0px;
+}
+#top-header .info-detail .phone-number{
+	padding-right:23px;
+}
+#top-header .social .list-social li{
+	padding:0px 5px;
+}
+#top-header .social .list-social li a{
+	display: block;
+	color: #fff;
+}
+/*=============END TOP_HEADER=================*/
+/*===============MAIN HEADER===================*/
+#main-header .wp-inner{
+	display: flex;
+}
+#main-header{
+	background: #fff;
+	position: relative;
+}
+.fixed{
+	position: fixed!important;
+	width: 100%;
+	z-index: 5;
+	box-shadow: 1px 5px 3px 2px #d8d8d8;
+	opacity: 0.5;
+	top: 0px;
+	opacity: 0;
+	transition: all 0.5s;
+	animation: headerAnimation 0.5s forwards;
+
+}
+@-webkit-keyframes headerAnimation{
+	0%{
+		opacity: 0;
+	}
+	25%{
+		opacity: 0.25;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	75%{
+		opacity: 0.75;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+#logo{
+	display: block;
+	padding: 6px 0px;
+}
+#main-menu{
+	display: flex;
+	margin-left: 63px;
+	margin-right: 200px;
+}
+#main-menu li a{
+	display: block;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #828282;
+	border-bottom: 2px solid #fff;
+	padding: 32px 15px;
+}
+#main-menu li a:hover{
+	color: #282828;
+	border-bottom: 2px solid #333!important;
+	transition: all 0.5s;
+}
+.language{
+	padding: 29px 0px;
+	position: relative;
+	margin: auto;
+}
+.language i{
+	font-size: 12px;
+	color: #d2bd7f;
+	position: absolute;
+
+}
+.language i.angle-down{
+	top:30px;
+	left: 35px;
+}
+.language i.browser{
+	top:30px;
+	left: -20px
+}
+#book-room{
+	width: 360px;
+	background-color: #1c1c1c;
+	padding: 30px;
+	position: absolute;
+	z-index: 2;
+	top: 257px;
+	left: 775px;
+	opacity: 0;
+}
+#icon-menu-respon{
+	position: absolute;
+	top: 28px;
+	left: 52px;
+	font-size: 20px;
+	color: #333;
+	cursor: pointer;
+	opacity: 0;
+}
+#menu-respon{
+	position: absolute;
+	top: 0px;
+	left: -240px;
+}
+#menu-respon li{
+	padding-left: 15px;
+	width: 240px;
+	background-color: #eded;
+	border-bottom: 1px solid #333;
+}
+#menu-respon li a{
+	display: block;
+	font-size: 15px;
+	color: #7b3b3b;
+	text-transform: uppercase;
+	text-align: left;
+	padding:15px 0px;
+}
+#menu-respon li:hover{
+	background-color: #4c204c88;
+	transition: all 0.25s;
+}
+#menu-respon li:hover a{
+	color: #333;
+	transition: all 0.25s;
+}
+.form{
+	animation:form 2s forwards;
+	animation-delay: 0.5s;
+}
+#btn-top{
+	position: fixed;
+	bottom: 50px;
+	width: 40px;
+	height: 40px;
+	right: 10px;
+	cursor: pointer;
+
+}
+@-webkit-keyframes form{
+	0%{
+		opacity:0;
+		transform: translateX(300px); 
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+#book-room label{
+	display: block;
+	color: #fff;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	padding-bottom: 10px;
+}
+#book-room select {
+	width: 300px;
+	padding: 12px;
+	color: #333;
+	font-size:12px;
+	margin-bottom: 20px;
+}
+#book-room #Adults{
+	width: 145px;
+}
+#book-room #Children{
+	width: 145px;
+}
+#book-room .box{
+	width: 145px;
+}
+#book-room button#btn-submit{
+	width: 300px;
+	padding: 20px;
+	background-color: #bf9958;
+	border-radius: 30px;
+	border:none;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+}
+/*=================SLIDER=======================*/
+#slider{
+	margin-bottom: 40px;
+	width: 100%;
+	height: 100%;
+}
+ul.list-img{
+	position: relative!important;
+}
+
+.arrow{
+	width: 45px;
+	height: 45px;
+	color: #fff;
+	background-color: #333;
+	opacity: 0.8;
+	font-size: 35px;
+	position: absolute;
+	border-radius: 10px;
+	text-align: center;
+	cursor: pointer;
+
+}
+.arrow i{
+	margin-top: 3px;
+}
+.prev{
+	top: 350px;
+	left: 75px;
+}
+.next{
+	top: 350px;
+	right: 61px;
+}
+/*===================About US=====================*/
+#about{margin-bottom: 80px;}
+#about .wp-inner{
+	display: flex;
+}
+.thumb-about{
+	opacity: 0;
+}
+#about .content{
+	width: 683.73px;
+	padding-right: 30px;
+	position: relative;
+	opacity:0;
+	transition: 0.5s;
+}
+
+.text-title{
+	font-size: 35px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	line-height: 54px;
+	color: #000;
+	text-align: center;
+	padding-top: 103px;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+}
+.rule{
+	position: absolute;
+	top: 220px;
+	width: 145px;
+	height: 3px;
+	background: #bf9958;
+	left: 225px;
+}
+ .text-desc{
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	color: #7c7c7c;
+	line-height: 35px;
+	font-weight: 400;
+	text-align: center;
+}
+.about-us{
+	display:inline-block;
+	padding:15px;
+	margin: 15px 225px;
+	text-align: center;
+	width: 140px;
+	font-size: 14px;
+	color: #fff;
+	background-color: #bf9958;
+	text-transform: uppercase;
+}
+/*====================OUR ROOM=========================*/
+#out-room {
+	background-color: #f6f6f6;
+	padding: 50px 0px;
+	position: relative;
+}
+#out-room .text-title{
+	padding: 0;
+	opacity: 0;
+}
+#out-room .rule1{
+	position: absolute;
+    width: 55px;
+    height: 3px;
+    background: #bf9958;
+    top: 105px;
+    left: 620px;
+}
+#list-items .item{
+	border:1px solid #e8e8e8;
+}
+#list-items .item .item-title{
+	font-size: 18px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	display: block;
+	color: #000;
+}
+#list-items{
+	margin-top: 40px;
+}
+#list-items .item .item-title:after{
+	content:"";
+	width: 50px;
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	height: 3px;
+	background-color: #bf9958;
+}
+#list-items .item .item-info{
+	padding: 25px 30px;
+}
+#list-items .item .item-info i{
+	font-size: 12px;
+	color: #bf9958;
+}
+#list-items .item .item-info p{
+	font-size: 12px;
+	color: #b0b0b0;
+	padding-bottom: 15px;
+}
+#list-items .item .item-info p b{
+	color: #333;
+	font-weight: 400;
+}
+#list-items .item a.img-item{
+	display: block;
+	overflow: hidden;
+}
+#list-items .item a.img-item:hover img{
+	transform: scale(1.1);
+	transition: all 0.5s;
+}
+
+/*=======================Events AND New =====================*/
+#new-evt{
+	padding-bottom: 60px;
+}
+#new-evt .wp-inner h3.text-title{
+	opacity: 0;
+}
+#new-evt .wp-inner h3.text-title:after,#utl .wp-inner h3.text-title:after{
+	content: "";
+	display: block;
+	text-align: center;
+	margin: 10px 560px 30px 560px;
+	width: 50px;
+	height: 3px;
+	background-color: #bf9958;
+}
+#list-post li{
+	width: 370px;
+	border: 1px solid #e8e8e8;
+}
+#list-post{
+	display: flex;
+	justify-content: space-between;
+}
+#list-post a.post-img{
+	display: block;
+	overflow: hidden;
+}
+#list-post a.post-img:hover img{
+	transform: scale(1.1);
+	transition: all 0.5s;
+}
+#list-post .post-info{
+	padding: 15px 120px 20px 20px;
+}
+#list-post .post-info .post-title{
+	font-size: 15px;
+	color: #333;
+	padding-bottom: 15px;
+	display: block;
+}
+#list-post .post-info .post-detail{
+	font-size: 13px;
+	color: #bcbcbc;
+	line-height: 20px;
+	font-weight: 400;
+	padding-bottom: 40px;
+}
+#list-post .post-info .read-more{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #e6d7be;
+}
+/*==========================Tiện Ích ==============================*/
+#utl{
+	background-color: #f6f6f6;
+	padding-bottom: 80px;
+}
+#utl .list-utl{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-evenly;
+}
+#utl h3.text-title{
+	opacity: 0;
+}
+#utl .list-utl li{
+	width: 370px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+#utl .list-utl li a{
+	display: block;
+	position: relative;
+
+
+}
+#utl .list-utl li:hover a:before{
+	content:"";
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	position: absolute;
+	height: 247px;
+	display: block;
+	background-color: #6d5324;
+	opacity: 0;
+	animation: t1 0.5s forwards;
+	transition: 0.5s;
+}
+@-webkit-keyframes t1{
+	0%{
+		opacity: 0;
+		transform: translateX(80px);
+	}
+	100%{
+		opacity: 0.6;
+		transform: translateX(0);
+	}
+}
+#utl p.utl-name{
+	position: absolute;
+	top: 100px;
+	font-family: 'Playfair Display', serif;
+	z-index: 3;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff;
+	left: 150px;
+	opacity: 0;
+}
+#utl p.utl-name:after{
+	content: "";
+	display: block;
+	width: 50px;
+	margin-top: 10px;
+	height: 3px;
+	background-color: #fff;
+}
+#utl .list-utl li:hover .utl-name{
+	opacity: 0;
+	animation: t2 0.5s forwards;
+	animation-delay: 0.3s;
+	transition: all 0.5s;
+}
+@-webkit-keyframes t2{
+	0%{
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+/*=========================Booking========================*/
+#booking .banner{
+	background-image: url(../../Images/Booking/14.png);
+	background-size: cover;
+	height: 165px;
+	padding: 60px 0px;
+}
+#booking .banner .text-banner{
+	font-size: 20px;
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+	display: inline-block;
+	text-transform: uppercase;
+	vertical-align: middle;
+	line-height: 54px;
+	margin: 132px 0xp;
+}
+.widget{
+	display: flex;
+	
+}
+.widget-left{
+	width: 662px;
+	opacity: 0;
+	padding: 50px 30px 50px 40px;
+}
+.widget .widget-title{
+	font-family: 'Playfair Display',serif;
+	font-size: 35px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 400;
+	text-align: center;
+}
+.widget .widget-title:after{
+	content: "";
+	width: 60px;
+	height: 3px;
+	background-color:#bf9958;
+	display: block;
+	margin:35px 250px 30px 250px;
+}
+.list-room{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+}
+.list-room li{
+	width: 180px;
+	margin-bottom: 12px;
+}
+.widget-right{
+	width: 606px;
+	opacity: 0;
+	padding: 50px 43px 50px 10px;
+}
+.comment{
+	padding: 30px 20px;
+	position: relative;
+
+}
+.text-comment{
+	text-align: center;
+	color: #b19f6a;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 500;
+	position: absolute;
+	top: 18px;
+	left: 80px;
+}
+.one{
+	position: absolute;
+	top: 0px;
+	left: 0;
+}
+.two{
+	position: absolute;
+	top: 55px;
+	right: 0;
+}
+/*==================FOOTER=====================*/
+#footer{
+	padding: 25px 0px 40px 0px;
+	background-color: #bf9958;
+}
+#footer .wp-inner{
+	display: flex;
+}
+.ft-logo{
+	width: 140px;
+	display: block;
+	margin: 0 auto;
+}
+.ft-about{
+	width: 273px;
+	padding-right: 25px;
+}
+.contact-us{
+	width: 303px;
+	padding-left: 25px;
+}
+.out-sevice{
+	width: 300px;
+	padding-left: 25px;
+	padding-right: 30px;
+}
+.title{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	padding: 30px 0px;
+}
+.list-ft li{
+	color: #fff;
+	margin-bottom: 20px;
+	font-size: 13px;
+	font-weight: 400;
+	padding-right: 30px;
+	line-height: 20px;
+}
+.list-ft li i{
+	margin-right: 5px;
+}
+#footer p{
+	color: #fff;
+	line-height: 22px;
+	font-size: 15px;
+	font-weight: 400;
+	padding-top: 10px;
+}
+.regSentMail{
+	padding-left: 25px;
+	padding-right: 30px;
+}
+.regSentMail input{
+	width:270px;
+	font-size: 15px;
+	color: #d2d2d2;
+	padding: 18px;
+	border: none;
+}
+.btn-sign-up{
+	display: block;
+	width: 270px;
+	padding: 19px;
+	margin-top: 20px;
+	background-color: #6f5222;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 400;
+}
+#copyright{
+	background-color: #6f5222;
+	padding: 23px 0px;
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+}

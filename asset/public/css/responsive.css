@@ -1,0 +1,236 @@
+@media screen and (max-width: 1024px) {
+	#top-header{
+		display: none;
+	}
+	.wp-inner{
+		width: 100%;
+	}
+	#main-menu{
+		margin: 0;
+	}
+	.form{
+		animation:form 2s forwards;
+		animation-delay: 0.5s;
+	}
+	#book-room{
+		width: 285px;
+		background-color: #1c1c1c;
+		padding: 30px;
+		position: absolute;
+		z-index: 2;
+		top: 110px;
+		left: 615px;
+		opacity: 0;
+	}
+	@-webkit-keyframes form{
+		0%{
+			opacity:0;
+			transform: translateX(300px); 
+		}
+		100%{
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	#book-room label{
+		display: block;
+		color: #fff;
+		font-size: 12px;
+		font-family: 'Open Sans', sans-serif;
+		padding-bottom: 10px;
+	}
+	#book-room select {
+		width: 224px;
+		padding: 12px;
+		color: #333;
+		font-size:12px;
+		margin-bottom: 20px;
+	}
+	#book-room #Adults{
+		width: 112px;
+	}
+	#book-room #Children{
+		width: 98px;
+	}
+	#book-room .box{
+		width: 112px;
+	}
+	#book-room button#btn-submit{
+		width: 210px;
+		padding: 12px;
+		background-color: #bf9958;
+		border-radius: 20px;
+		border:none;
+		color: #fff;
+		font-size: 16px;
+		cursor: pointer;
+	}
+	#out-room .rule1{
+		left: 490px;
+	}
+	#utl .wp-inner h3.text-title:after{
+		margin-left: 460px;
+	}
+	.widget{
+		flex-wrap: wrap;
+	}
+	.widget-left{
+		width: 100%;
+	}
+	.widget-right{
+		width: 100%;
+	}
+	.widget .widget-title:after{
+		margin-left: 400px;
+	}
+	.list-room li{
+		width: 270px;
+	}
+}
+@media screen and (max-width: 800px)
+{
+	#main-menu{
+		display: none;
+	}
+	#icon-menu-respon{
+		opacity: 1;
+		transition: all 0.5s;
+	}
+	#logo{
+		margin-left: 320px;
+	}
+	.language{
+		margin: 0;
+	}
+	#book-room{
+		display: none;
+	}
+	.prev{
+		top: 265px;
+		left: 55px;
+	}
+	.next{
+		top: 265px;
+		right: 60px;
+	}
+	.wp-inner{
+		flex-wrap: wrap;
+	}
+	.rule1{
+		left: 380px!important;
+	}
+	#list-post li {
+		width: 220px;
+	}
+	.language{
+		margin-left: 250px;
+	}
+	#new-evt .wp-inner h3.text-title:after{
+		margin-left: 324px;
+	}
+	#utl .wp-inner h3.text-title:after{
+		margin-left: 330px;
+	}
+	#utl .list-utl li {
+		width: 330px;
+	}
+	.widget .widget-title:after{
+		margin-left: 290px;
+	}
+	#footer .wp-inner{
+		flex-wrap: wrap;
+	}
+
+}
+@media screen and (max-width: 768px){
+	#main-menu{
+		display: none;
+	}
+	#logo{
+		margin-left: 320px;
+	}
+	.language{
+		margin: 0;
+	}
+	#book-room{
+		display: none;
+	}
+	.prev{
+		top: 265px;
+		left: 55px;
+	}
+	.next{
+		top: 265px;
+		right: 60px;
+	}
+	.wp-inner{
+		flex-wrap: wrap;
+	}
+	.rule1{
+		left: 370px;
+	}
+	#list-post li {
+		width: 220px;
+	}
+	.language{
+		margin-left: 250px;
+	}
+	#new-evt .wp-inner h3.text-title:after{
+		margin-left: 324px;
+	}
+	#utl .wp-inner h3.text-title:after{
+		margin-left: 330px;
+	}
+	#utl .list-utl li {
+		width: 330px;
+	}
+	.widget .widget-title:after{
+		margin-left: 290px;
+	}
+	#footer .wp-inner{
+		flex-wrap: wrap;
+	}
+} 
+@media screen and (max-width:375px)
+{
+	.language{
+		display: none!important;
+	}
+	.prev{
+		top: 92px!important;
+		left: 30px!important;
+	}
+	.next{
+		top: 92px!important;
+		right: 30px!important;
+	}
+	.content{
+		width: 100%!important;
+	}
+	.about-us{
+		margin-left: 80px!important;
+	}
+	#list-post{
+		width: 100%!important;
+		flex-wrap: wrap!important;
+	}
+	#list-post li{
+		width: 100%!important;
+		margin-bottom: 15px;
+	}
+	.widget-right{
+		display: none;
+	}
+	#new-evt .wp-inner h3.text-title:after{
+		opacity: 0;
+	}
+	#utl .wp-inner h3.text-title:after{
+		opacity: 0;
+	}
+	.widget .widget-title:after{
+		opacity: 0;
+	}
+	.rule{
+		opacity: 0!important;
+	}
+}
